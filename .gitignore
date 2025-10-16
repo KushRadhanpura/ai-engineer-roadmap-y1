@@ -7,9 +7,16 @@ __pycache__/
 *.pyc
 *.log
 
-# Generated data files and directories
-**/data/
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
 
 # IDE and editor folders
 .vscode/
 .idea/
+
+# Generated data files (good practice to not track them)
+**/data/
+cleaned_books_data.csv
+
+# OS-specific files
+.DS_Store
