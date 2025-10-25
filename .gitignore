@@ -20,3 +20,14 @@ cleaned_books_data.csv
 
 # OS-specific files
 .DS_Store
+
+
+# Ignore large data files for this project
+04-kaggle/train.csv
+04-kaggle/test.csv
+04-kaggle/*.zip
+
+# General Python/Notebook files to ignore
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
