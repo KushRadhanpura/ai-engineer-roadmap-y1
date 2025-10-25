@@ -31,3 +31,6 @@ cleaned_books_data.csv
 __pycache__/
 *.pyc
 .ipynb_checkpoints/
+
+# Virtual environment for the numpy-scratch project
+05-deep-learning-core/01-nn-numpy-scratch/venv_scratch/
