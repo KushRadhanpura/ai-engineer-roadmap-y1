@@ -34,7 +34,7 @@ jobs:
   build-and-push-docker:
     needs: build-and-test
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main' # Only run on push to main
+    if: github.ref == 'refs/heads/main'
 
     steps:
     - uses: actions/checkout@v3
@@ -47,9 +47,10 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build and push
+      id: build-and-push
       uses: docker/build-push-action@v4
       with:
         context: .
         file: ./07-NLP_Transformer_QA/Dockerfile
         push: true
-        tags: ghcr.io/${{ github.repository_owner }}/nlp-qa-system:latest
+        tags: ghcr.io/${{ github.repository_owner,, }}/nlp-qa-system:latest
