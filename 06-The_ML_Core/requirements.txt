@@ -1,0 +1,44 @@
+# ---------------------------------------------
+# Quarter 1 (Months 1-3): Full-Stack Data Foundations
+# ---------------------------------------------
+# M1: Data Collector (Python, Requests, Beautiful Soup, Selenium)
+requests
+beautifulsoup4
+selenium
+
+# M2: Data Analysis & DB (NumPy, Pandas, Matplotlib, Seaborn, PostgreSQL)
+numpy
+pandas
+matplotlib
+seaborn
+psycopg2-binary  # For connecting to PostgreSQL on Pop!_OS
+sqlalchemy       # For general database interaction
+
+# M3: APIs & Deployment (FastAPI)
+fastapi
+uvicorn
+python-dotenv
+
+# ---------------------------------------------
+# Quarter 2 (Months 4-6): The Machine Learning Core
+# ---------------------------------------------
+# M4: Classical ML (Scikit-learn)
+scikit-learn
+
+# M5/M6: Deep Learning & Vision/NLP (PyTorch, Torchvision)
+# NOTE: Using the standard build. If you have a specific CUDA version 
+# on your Pop!_OS machine, you may need to adjust these lines
+# for GPU support. Otherwise, this is safe for CPU or standard GPU setup.
+torch
+torchvision
+
+# M6: Advanced Vision/NLP
+nltk             # Natural Language Toolkit for basic text processing
+tqdm             # Progress bars for training loops
+
+# ---------------------------------------------
+# General Tools
+# ---------------------------------------------
+jupyterlab       # For running .ipynb notebooks (like the ones in 'notebooks/')
+ipykernel        # To link the 'ai_roadmap_env' to Jupyter
+pytest           # For writing unit tests (essential for M8 MLOps)
