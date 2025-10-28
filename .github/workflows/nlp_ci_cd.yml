@@ -13,7 +13,6 @@ permissions:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
 
@@ -35,7 +34,6 @@ jobs:
     needs: build-and-test
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-
     steps:
     - uses: actions/checkout@v3
 
@@ -46,11 +44,10 @@ jobs:
         username: ${{ github.repository_owner }}
         password: ${{ secrets.GITHUB_TOKEN }}
 
-    - name: Build and push
-      id: build-and-push
+    - name: Build and push Docker image
       uses: docker/build-push-action@v4
       with:
         context: .
         file: ./07-NLP_Transformer_QA/Dockerfile
         push: true
-        tags: ghcr.io/${{ github.repository_owner,, }}/nlp-qa-system:latest
+        tags: ghcr.io/${{ lower(github.repository_owner) }}/nlp-qa-system:latest
