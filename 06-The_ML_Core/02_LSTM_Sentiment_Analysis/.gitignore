@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+venv_*/
+env/
+ENV/
+
+# Data files (too large for GitHub)
+data/*.csv
+data/*.json
+
+# Model files (too large for GitHub)
+models/*.pth
+models/*.pt
+models/*.pkl
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Logs
+*.log
+training_output.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db

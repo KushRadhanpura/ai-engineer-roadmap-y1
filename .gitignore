@@ -34,3 +34,7 @@ __pycache__/
 
 # Virtual environment for the numpy-scratch project
 05-deep-learning-core/01-nn-numpy-scratch/venv_scratch/
+
+# Model weights and submission files
+*.pth
+*.csv
