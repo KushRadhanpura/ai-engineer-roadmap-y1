@@ -1,0 +1,13 @@
+# For model fine-tuning and serving
+transformers
+torch
+datasets
+scikit-learn
+
+# For API
+fastapi
+uvicorn
+
+# For utilities
+pandas
+numpy
