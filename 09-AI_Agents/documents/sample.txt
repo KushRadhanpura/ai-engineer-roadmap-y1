@@ -1,0 +1,5 @@
+This is a sample document for our RAG chatbot.
+It contains a small amount of text to ensure we do not hit API rate limits during the embedding process.
+Retrieval-Augmented Generation is a technique for enhancing the accuracy and reliability of large language models with facts fetched from external sources.
+The chatbot should be able to answer questions based on the content of this document.
+For example, you could ask: "What is Retrieval-Augmented Generation?"
