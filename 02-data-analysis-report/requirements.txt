@@ -1,0 +1,10 @@
+pandas
+matplotlib
+seaborn
+psycopg2-binary
+nbformat
+nbclient
+nbconvert
+ipykernel
+jupyter-client
+jupyter-core
